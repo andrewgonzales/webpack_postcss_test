@@ -1,0 +1,5 @@
+$var-margin: 20px;
+
+body{
+    margin: $var-margin; 
+}
