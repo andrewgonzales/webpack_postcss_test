@@ -1,11 +1,13 @@
 module.exports = {
     plugins: [
-    require( 'postcss-smart-import' )( { /* ...options */ } ),
+    require( 'postcss-nested' )( { /* ...options */ } ),
     require( 'postcss-export-vars' )( {
         file: 'varOutput',
         type: 'json',
         match: ['-margin']
     } ),
-    require( 'postcss-cssnext' )( { /* ...options */ } )
+    require( 'precss' )( { /* ...options */ } ),
+    require( 'postcss-cssnext' )( { /* ...options */ } ),
+    require( 'csswring' )( { /* ...options */ } )
   ]
 }
